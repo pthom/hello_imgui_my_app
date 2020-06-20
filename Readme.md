@@ -60,7 +60,7 @@ python3 -m http.server
 ./external/hello_imgui/tools/ios/sdl_compile_ios.sh
 
 # Step 2: set your Apple Development Team Id
-export CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM=XA68U4C3Y7
+export CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM=0123456789
 
 # Step : cmake
 mkdir build_ios
