@@ -128,7 +128,7 @@ open my_app.xcodeproj
 # Compile for Android
 
 ````bash
-# Step 1: download SDL`
+# Step 1: download SDL
 ./external/hello_imgui/tools/sdl_download.sh
 
 # Step 2: Set android sdk and ndk paths
@@ -156,5 +156,4 @@ cmake \
 cd hello_AndroidStudio
 ./gradlew build
 ./gradlew installDebug
-
 ```
