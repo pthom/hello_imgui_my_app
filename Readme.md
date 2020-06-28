@@ -1,10 +1,57 @@
 # Hello ImGui Demo app
 
-This repository demonstrates how to create a new application using ImGui.
+This repository demonstrates how to create a new multiplatform application using [Hello, Dear ImGui](https://github.com/pthom/hello_imgui). 
+
+This application will work on iOS, Android, Linux, MacOS, Windows, and emscripten.
+
+## hello_imgui submodule
 
 hello_imgui is a submodule: 
 ````bash
 git submodule add https://github.com/pthom/hello_imgui.git external/hello_imgui
+````
+
+## Embedded assets
+
+Files in the assets/ folder are embedded automatically on iOS, Android and emscripten.
+
+## Custom settings for iOS and Android:
+
+This application has some custom settings for iOS and Android (icon, icon name, etc.)
+
+### iOS
+````
+ios
+├── Info.plist
+└── icons/
+    ├── Default-375w-812h@3x.disabled.png
+    ├── Default-568h@2x.png
+    ├── Default.png
+    ├── Icon.png
+    └── Readme.md
+````
+
+### Android
+````
+android
+├── mipmap-source/
+│   ├── Readme.md
+│   └── ic_launcher.png
+└── res/
+    ├── mipmap-hdpi/
+    │   └── ic_launcher.png
+    ├── mipmap-mdpi/
+    │   └── ic_launcher.png
+    ├── mipmap-xhdpi/
+    │   └── ic_launcher.png
+    ├── mipmap-xxhdpi/
+    │   └── ic_launcher.png
+    ├── mipmap-xxxhdpi/
+    │   └── ic_launcher.png
+    └── values/
+        ├── colors.xml
+        ├── strings.xml
+        └── styles.xml
 ````
 
 # Compile for desktop
