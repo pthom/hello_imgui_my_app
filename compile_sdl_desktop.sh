@@ -6,7 +6,7 @@ cd $THIS_DIR
 git submodule update --init --recursive
 
 # Step 2: install third paties via vcpkg
-./external/hello_imgui/tools/vcpkg_install_third_parties.sh
+python ./external/hello_imgui/tools/vcpkg_install_third_parties.py
 
 # Step 3: run cmake using vcpkg toolchain
 build_dir=build_sdl
