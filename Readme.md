@@ -78,3 +78,36 @@ open my_app.xcodeproj
 
 ````
 
+# Compile for Android
+
+````bash
+# Step 1: download SDL`
+./external/hello_imgui/tools/sdl_download.sh
+
+# Step 2: Set android sdk and ndk paths
+export ANDROID_HOME=/Users/me/Library/Android/sdk
+export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
+export android_toolchain_file=$ANDROID_NDK_HOME/build/cmake/android.toolchain.cmake
+
+# Step 3 : Set JAVA_HOME to a path with jdk 8
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
+# Step 4: select your abi
+export android_abi=armeabi-v7a
+
+# Step 5: run cmake with option -DHELLOIMGUI_CREATE_ANDROID_STUDIO_PROJECT=ON
+cmake \
+    -DCMAKE_TOOLCHAIN_FILE=$android_toolchain_file \
+    -DANDROID_ABI=$android_abi \
+    -DHELLOIMGUI_USE_SDL_OPENGL3=ON \
+    -DHELLOIMGUI_CREATE_ANDROID_STUDIO_PROJECT=ON \
+    ..
+
+# Step 6: open the project hello_AndroidStudio/ with Android Studio
+# And build / debug the app!
+# Alternatively, via the command line: 
+cd hello_AndroidStudio
+./gradlew build
+./gradlew installDebug
+
+```
