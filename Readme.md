@@ -66,7 +66,8 @@ git submodule update --init --recursive
 python ./external/hello_imgui/tools/vcpkg_install_third_parties.py
 
 # Step 3: run cmake using vcpkg toolchain
-mkdir build_sdl && cd build_sdl
+mkdir build_sdl 
+cd build_sdl
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../external/hello_imgui/vcpkg/scripts/buildsystems/vcpkg.cmake -DHELLOIMGUI_USE_SDL_OPENGL3=ON
 
 # Step 4: build
