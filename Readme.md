@@ -14,7 +14,8 @@ A preconfigured workspace is available at gitpod:
 
 [Open the workspace](https://gitpod.io/#github.com/pthom/hello_imgui_my_app/tree/gitpod)
 
-[gitpod youtube demo](https://youtu.be/mZXXvptWlaA)
+
+[Demo on youttube ![icon](resources/gitpod_youtube_demo.png)](https://youtu.be/mZXXvptWlaA)
 
 ## hello_imgui submodule
 
