@@ -4,7 +4,7 @@ image:
 tasks:
   - command: |
             echo "Server Terminal"
-            sleep 1
+            sleep 5
             cd build_emscripten
             python -m http.server
     name: http server
