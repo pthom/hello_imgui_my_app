@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: cmake .
+
+ports:
+  - port: 8000
+    onOpen: open-browser
