@@ -8,6 +8,8 @@ tasks:
             cd build_emscripten
             python -m http.server
     name: http server
+  - command: echo "Main Terminal - You are in the top folder of the repository"
+    name: main
   - command: |
             echo "Build Terminal"
             source .gitpod_emsdk_set_env.sh
@@ -17,8 +19,6 @@ tasks:
             make -j 4
             echo "Run make to (re)compile the project"
     name: build
-  - command: echo "Main Terminal - You are in the top folder of the repository"
-    name: main
 
 ports:
   - port: 8000
