@@ -17,11 +17,7 @@ tasks:
             cd build_emscripten
             emcmake cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
             make -j 4
-            echo ""
-            echo "In order to compile the project just write:"
-            echo ""
-            echo "make"
-            echo ""
+            /workspace/hello_imgui_my_app/.gitpod_help.sh
     name: build
 
 ports:
