@@ -4,6 +4,13 @@ This repository demonstrates how to create a new multiplatform application using
 
 This application will work on iOS, Android, Linux, MacOS, Windows, and emscripten.
 
+## Instant develop on [gitpod.io](https://gitpod.io/)
+
+A preconfigured workspace is available at gitpod:
+
+[Open the workspace](https://gitpod.io/#github.com/pthom/hello_imgui_my_app/tree/gitpod)
+
+
 ## hello_imgui submodule
 
 hello_imgui is a submodule: 
