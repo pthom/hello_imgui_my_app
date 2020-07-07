@@ -5,7 +5,7 @@ tasks:
   - command: |
             echo "Server Terminal"
             sleep 5
-            cd build
+            cd build_emscripten
             python -m http.server
     name: http server
   - command: echo "Main Terminal - You are in the top folder of the repository"
@@ -13,11 +13,13 @@ tasks:
   - command: |
             echo "Build Terminal"
             source .gitpod_emsdk_set_env.sh
-            mkdir build
-            cd build
+            mkdir build_emscripten
+            cd build_emscripten
             emcmake cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
             make -j 4
-            echo "\nIn order to compile the project just type \n"
+            echo ""
+            echo "In order to compile the project just write:"
+            echo ""
             echo "make"
             echo ""
     name: build
