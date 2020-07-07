@@ -2,7 +2,19 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: cmake .
+  - command: |
+            echo "Build Terminal"
+            source .gitpod_emsdk_set_env.sh
+            mkdir build_emscripten
+            cd build_emscripten
+            emcmake cmake ..
+            make -j 4
+            echo "Run make to (re)compile the project"
+  - command: |
+            echo "Server Terminal"
+            sleep 1
+            cd build_emsripten
+            python -m http.server
 
 ports:
   - port: 8000
