@@ -17,9 +17,11 @@ tasks:
             cd build_emscripten
             emcmake cmake ..
             make -j 4
-            echo "Run make to (re)compile the project"
+            echo "\nIn order to compile the project just type \n"
+            echo "make"
+            echo ""
     name: build
 
 ports:
   - port: 8000
-    onOpen: open-browser
+    # onOpen: open-browser
