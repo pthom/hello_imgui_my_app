@@ -7,8 +7,10 @@ This application will work on iOS, Android, Linux, MacOS, Windows, and emscripte
 # Instant develop
 
 A preconfigured workspace is available at gitpod.io 
-You can develop small ImGui applications in 3 minutes, *without even installing anything*!: 
+You can develop small ImGui applications in 3 minutes, *without even installing anything*! 
+No IDE, no text editor, no library, no compiler is required.
 
+With a simple browser, you can start right away:
 [Open the workspace](https://gitpod.io/#github.com/pthom/hello_imgui_my_app/tree/gitpod)
 
 See the demo on youtube below for some explanations:
