@@ -4,20 +4,23 @@ This repository demonstrates how to create a new multiplatform application using
 
 This application will work on iOS, Android, Linux, MacOS, Windows, and emscripten.
 
-## ImGui Manual
+# Instant develop
 
-Access the interactive ImGui Manual here: [ImGui Manual](https://traineq.org/imgui_manual/src/imgui_manual.html)
+A preconfigured workspace is available at gitpod.io 
+You can develop small ImGui applications in 3 minutes, *without even installing anything*!: 
 
-## Instant develop on [gitpod.io](https://gitpod.io/)
-
-A preconfigured workspace is available at gitpod. 
-You can develop small ImGui applications in 3 minutes, *without even installing anything*!
-
- [Open the workspace](https://gitpod.io/#github.com/pthom/hello_imgui_my_app/tree/gitpod)
+[Open the workspace](https://gitpod.io/#github.com/pthom/hello_imgui_my_app/tree/gitpod)
 
 See the demo on youtube below for some explanations:
 
 [![icon](resources/gitpod_youtube_demo.png)](https://youtu.be/mZXXvptWlaA)
+
+# ImGui Manual
+
+Access the interactive ImGui Manual here: [ImGui Manual](https://traineq.org/imgui_manual/src/imgui_manual.html)
+
+
+# Info and build instructions on your own computer
 
 ## hello_imgui submodule
 
