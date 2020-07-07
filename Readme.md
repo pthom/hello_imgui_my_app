@@ -4,6 +4,10 @@ This repository demonstrates how to create a new multiplatform application using
 
 This application will work on iOS, Android, Linux, MacOS, Windows, and emscripten.
 
+## ImGui Manual
+
+Access the interactive ImGui Manual here: [ImGui Manual](https://traineq.org/imgui_manual/src/imgui_manual.html)
+
 ## Instant develop on [gitpod.io](https://gitpod.io/)
 
 A preconfigured workspace is available at gitpod:
