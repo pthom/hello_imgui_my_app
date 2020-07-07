@@ -16,3 +16,6 @@ endif()
 
 # Step 4: declare your app
 hello_imgui_add_app(hello hello.cpp)
+
+# For gitpod "instant demo only"
+add_subdirectory(examples)
