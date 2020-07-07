@@ -3,6 +3,12 @@ image:
 
 tasks:
   - command: |
+            echo "Server Terminal"
+            sleep 1
+            cd build_emscripten
+            python -m http.server
+    name: http server
+  - command: |
             echo "Build Terminal"
             source .gitpod_emsdk_set_env.sh
             mkdir build_emscripten
@@ -10,11 +16,9 @@ tasks:
             emcmake cmake ..
             make -j 4
             echo "Run make to (re)compile the project"
-  - command: |
-            echo "Server Terminal"
-            sleep 1
-            cd build_emsripten
-            python -m http.server
+    name: build
+  - command: echo "Main Terminal - You are in the top folder of the repository"
+    name: main
 
 ports:
   - port: 8000
