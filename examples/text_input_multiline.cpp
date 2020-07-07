@@ -5,12 +5,16 @@ void Gui()
     // Note: we are using a fixed-sized buffer for simplicity here. See ImGuiInputTextFlags_CallbackResize
     // and the code in misc/cpp/imgui_stdlib.h for how to setup InputText() for dynamically resizing strings.
     static char text[1024 * 16] =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et "
-        "dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
-        "ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat "
-        "nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim "
-        "id est laborum.";
-
+        "/*\n"
+        " The Pentium F00F bug, shorthand for F0 0F C7 C8,\n"
+        " the hexadecimal encoding of one offending instruction,\n"
+        " more formally, the invalid operand with locked CMPXCHG8B\n"
+        " instruction bug, is a design flaw in the majority of\n"
+        " Intel Pentium, Pentium MMX, and Pentium OverDrive\n"
+        " processors (all in the P5 microarchitecture).\n"
+        "*/\n\n"
+        "label:\n"
+        "\tlock cmpxchg8b eax\n";
     static ImGuiInputTextFlags flags = ImGuiInputTextFlags_AllowTabInput;
     ImGui::CheckboxFlags("ImGuiInputTextFlags_ReadOnly", (unsigned int*)&flags, ImGuiInputTextFlags_ReadOnly);
     ImGui::CheckboxFlags("ImGuiInputTextFlags_AllowTabInput", (unsigned int*)&flags, ImGuiInputTextFlags_AllowTabInput);
