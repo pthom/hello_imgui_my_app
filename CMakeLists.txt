@@ -19,3 +19,5 @@ hello_imgui_add_app(hello hello.cpp)
 
 # For gitpod "instant demo only"
 add_subdirectory(examples)
+
+add_subdirectory(test)
