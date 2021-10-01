@@ -1,3 +1,5 @@
+[![Build](https://github.com/jminor/hello_imgui_my_app/actions/workflows/build.yml/badge.svg)](https://github.com/jminor/hello_imgui_my_app/actions/workflows/build.yml)
+
 # Hello ImGui Demo app
 
 This repository demonstrates how to create a new multiplatform application using [Hello, Dear ImGui](https://github.com/pthom/hello_imgui). 
